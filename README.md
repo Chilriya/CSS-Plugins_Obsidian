@@ -1,5 +1,5 @@
-# CSS.SnippetsObsidian
-This a repo to publish some CSS Snippets for Obsidian
+# CSS-Plugins_Obsidian
+This a repo to publish some CSS Snippets and plugins for Obsidian
 
 ## **Snippets** 
 
