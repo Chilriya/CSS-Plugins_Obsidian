@@ -1,0 +1,9 @@
+/* Change la couleur du nom des dossiers en bleu */
+.nav-folder-title-content {
+    color: #2b7fff !important;
+}
+
+/* Optionnel : rend le nom un peu plus épais pour bien les distinguer des fichiers */
+.nav-folder-title-content {
+    font-weight: 600;
+}

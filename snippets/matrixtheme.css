@@ -1,0 +1,61 @@
+/* --- LOOK GÉNÉRAL MATRIX --- */
+
+/* Fond de l'application (Noir pur) */
+.app-container, 
+.workspace, 
+.workspace-split, 
+.workspace-leaf, 
+.workspace-tabs,
+.nav-files-container,
+.markdown-source-view.mod-cm6,
+.markdown-rendered {
+    background-color: #000000 !important;
+}
+
+/* Texte principal (Vert Matrix classique) */
+body, .cm-content, .markdown-rendered {
+    color: #00FF41 !important;
+    font-family: 'Courier New', Courier, monospace !important; /* Police monospacée style code */
+}
+
+/* Bordures de l'interface */
+.workspace-leaf-resize-handle,
+.workspace-divider,
+.nav-folder-title,
+.nav-file-title {
+    border-color: #003B00 !important;
+}
+
+/* --- EXPLORATEUR DE FICHIERS --- */
+
+/* Dossiers en Vert clair (puisque tu voulais du bleu avant, ici on harmonise en vert) */
+.nav-folder-title-content {
+    color: #00FF41 !important;
+    text-shadow: 0 0 5px #00FF41; /* Effet de lueur */
+}
+
+/* Fichiers en Vert plus foncé/émeraude */
+.nav-file-title-content {
+    color: #008F11 !important;
+}
+
+/* --- ÉLÉMENTS ACTIFS --- */
+
+/* Titres de notes (H1, H2, etc.) */
+.markdown-rendered h1, .cm-header-1,
+.markdown-rendered h2, .cm-header-2 {
+    color: #00FF41 !important;
+    text-transform: uppercase;
+    border-bottom: 1px solid #003B00;
+}
+
+/* Curseur de texte */
+.cm-cursor {
+    border-left: 2px solid #00FF41 !important;
+}
+
+/* Sélection de texte */
+.cm-selectionBackground, ::selection {
+    background-color: #003B00 !important;
+    color: #00FF41 !important;
+}

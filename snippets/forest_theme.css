@@ -1,0 +1,116 @@
+/* --- THÈME FORÊT ENCHANTÉE PASTEL --- */
+
+/* Import de la police "Merriweather" pour un côté conte de fées */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* Couleurs de la forêt pastel */
+:root {
+    --forest-light-green: #d4edda;     /* Vert d'eau très clair */
+    --forest-medium-green: #b7e4c7;    /* Vert menthe doux */
+    --forest-dark-green: #84a98c;      /* Vert forêt pastel */
+    --forest-brown-light: #fefae0;     /* Crème boisé */
+    --forest-brown-dark: #a98467;      /* Brun doux */
+    --forest-text-main: #344e41;       /* Vert très foncé pour le texte */
+    --forest-text-accent: #52796f;     /* Vert-gris pour accents */
+}
+
+/* --- FOND GÉNÉRAL AVEC MOTIF --- */
+
+body {
+    background-color: var(--forest-light-green) !important;
+    /* Motif feuilles/branches en filigrane (très subtil) */
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0 C75 0 100 25 100 50 C100 75 75 100 50 100 C25 100 0 75 0 50 C0 25 25 0 50 0 Z" fill="%23d4edda" fill-opacity="0.3"/><path d="M20 50 Q30 30 50 30 T80 50 Q70 70 50 70 T20 50 Z" fill="%23b7e4c7" fill-opacity="0.3"/></svg>') !important;
+    background-size: 200px 200px !important;
+    background-repeat: repeat !important;
+    font-family: 'Merriweather', serif !important;
+    color: var(--forest-text-main) !important;
+}
+
+/* Zone d'écriture (Comme un parchemin ou une écorce polie) */
+.markdown-source-view.mod-cm6, .markdown-rendered {
+    background-color: var(--forest-brown-light) !important; /* Couleur papier/écorce */
+    border-radius: 20px !important; /* Bords doux comme des feuilles */
+    margin: 30px !important;
+    padding: 25px !important;
+    border: 3px solid var(--forest-medium-green) !important; /* Bordure naturelle */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important; /* Ombre de sous-bois */
+}
+
+/* --- ICÔNES DE DOSSIERS (Forêt Magique) --- */
+
+/* Par défaut : Arbre 🌳 */
+.nav-folder-title-content::before {
+    content: "🌳 ";
+}
+
+/* Un dossier sur deux : Champignon 🍄 */
+.nav-folder:nth-child(2n) .nav-folder-title-content::before {
+    content: "🍄 ";
+}
+
+/* Un dossier sur trois : Renard 🦊 */
+.nav-folder:nth-child(3n) .nav-folder-title-content::before {
+    content: "🦊 ";
+}
+
+/* Un dossier sur quatre : Hibou 🦉 */
+.nav-folder:nth-child(4n) .nav-folder-title-content::before {
+    content: "🦉 ";
+}
+
+/* --- NAVIGATION & EXPLORATEUR --- */
+
+/* Barre latérale (Tronc d'arbre ou mousse) */
+.nav-files-container {
+    background-color: var(--forest-medium-green) !important;
+    border-right: 2px solid var(--forest-dark-green) !important;
+    border-radius: 0 30px 30px 0 !important; /* Forme organique */
+}
+
+/* Dossiers (Vert foncé, comme la canopée) */
+.nav-folder-title-content {
+    color: var(--forest-text-main) !important;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    padding: 8px 0;
+}
+
+/* Fichiers (Brun, comme les feuilles mortes) */
+.nav-file-title-content {
+    color: var(--forest-brown-dark) !important;
+    font-weight: 400 !important;
+    padding: 6px 0;
+}
+
+/* --- TYPOGRAPHIE & ÉLÉMENTS TEXTE --- */
+
+h1, h2, h3 {
+    color: var(--forest-text-accent) !important;
+    border-bottom: 2px dashed var(--forest-dark-green) !important;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+/* Italique (Vert plus clair, comme de la sève) */
+em, i, .cm-em {
+    color: #4CAF50 !important; /* Vert émeraude */
+    font-style: italic;
+}
+
+/* Gras (Brun profond, comme l'écorce) */
+strong, b, .cm-strong {
+    color: var(--forest-text-main) !important;
+    font-weight: 700;
+}
+
+/* Curseur (Fine branche) */
+.cm-cursor {
+    border-left: 3px solid var(--forest-dark-green) !important;
+}
+
+/* Sélection de texte (Vert mousse) */
+.cm-selectionBackground, ::selection {
+    background-color: rgba(132, 169, 140, 0.4) !important; /* Vert pastel semi-transparent */
+    border-radius: 8px;
+}

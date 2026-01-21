@@ -1,0 +1,5 @@
+/* Rend uniquement le texte en italique bleu */
+em, i, .cm-em {
+    color: #2b7fff;
+    font-style: italic;
+}

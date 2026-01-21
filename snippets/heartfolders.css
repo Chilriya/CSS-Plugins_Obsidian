@@ -1,0 +1,13 @@
+/* Remplace l'icône de dossier par un cœur */
+.nav-folder-title-content::before {
+    content: "❤️ ";
+    margin-right: 5px;
+}
+
+/* Cache l'icône de flèche originale pour un look plus propre */
+.nav-folder-collapse-indicator {
+    display: none;
+}
+.nav-folder-title:hover .nav-folder-title-content::before {
+    content: "💖 ";
+}

@@ -1,0 +1,87 @@
+/* --- THÈME SWISS PRIDE --- */
+
+/* Import de la police Inter (très proche du design suisse moderne) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* Couleurs du drapeau */
+:root {
+    --swiss-red: #FF0000;
+    --swiss-white: #FFFFFF;
+    --swiss-text: #1a1a1a;
+}
+
+/* --- FOND AVEC LE DRAPEAU SUISSE --- */
+body {
+    background-color: var(--swiss-red) !important;
+    /* Création de la croix suisse centrée en fond */
+    background-image: 
+        linear-gradient(var(--swiss-white), var(--swiss-white)), 
+        linear-gradient(var(--swiss-white), var(--swiss-white)) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: 200px 60px, 60px 200px !important; /* La croix */
+    background-attachment: fixed !important;
+}
+
+/* Zone d'écriture (Propre et carrée) */
+.markdown-source-view.mod-cm6, .markdown-rendered {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    margin: 40px !important;
+    border: 4px solid var(--swiss-text) !important;
+    border-radius: 0px !important; /* Design suisse = angles droits */
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* --- ICÔNES DE DOSSIERS ALÉATOIRES --- */
+
+/* Par défaut : une Vache 🐄 */
+.nav-folder-title-content::before {
+    content: "🐄 ";
+}
+
+/* Un dossier sur deux : une Fondue 🫕 */
+.nav-folder:nth-child(2n) .nav-folder-title-content::before {
+    content: "🫕 ";
+}
+
+/* Un dossier sur trois : une Montre ⌚ */
+.nav-folder:nth-child(3n) .nav-folder-title-content::before {
+    content: "⌚ ";
+}
+
+/* --- NAVIGATION --- */
+
+/* Barre latérale rouge */
+.nav-files-container {
+    background-color: var(--swiss-red) !important;
+}
+
+/* Dossiers en blanc sur fond rouge */
+.nav-folder-title-content {
+    color: var(--swiss-white) !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+
+/* Fichiers (Style sobre) */
+.nav-file-title-content {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Effet de sélection (Noir pour le contraste) */
+.nav-file-title.is-active, .nav-folder-title.is-active {
+    background-color: var(--swiss-text) !important;
+}
+
+/* --- TYPOGRAPHIE --- */
+
+h1, h2, h3 {
+    color: var(--swiss-red) !important;
+    font-weight: 900 !important;
+    border-bottom: 5px solid var(--swiss-red);
+}
+
+/* Curseur rouge */
+.cm-cursor {
+    border-left: 3px solid var(--swiss-red) !important;
+}

@@ -1,0 +1,10 @@
+/* Noms des dossiers en bleu */
+.nav-folder-title-content {
+    color: #2b7fff !important;
+    font-weight: 600; /* Un peu plus épais pour les dossiers */
+}
+
+/* Noms des fichiers en violet */
+.nav-file-title-content {
+    color: #a371f7 !important;
+}

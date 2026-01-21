@@ -1,0 +1,121 @@
+/* --- THÈME "AQUARELLE JAPONAISE & CERISIERS" --- */
+
+/* Import de la police Noto Serif JP pour l'élégance */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap');
+
+/* Couleurs de base (douces, inspirées de l'aquarelle) */
+:root {
+    --jp-background-light: #fdfaf5; /* Blanc cassé, crème */
+    --jp-paper-white: #ffffff;      /* Blanc pur pour la feuille */
+    --jp-cherry-blossom: #fbe9ef;   /* Rose pâle cerisier */
+    --jp-accent-pink: #d999ab;      /* Rose plus prononcé */
+    --jp-text-dark: #3a3f47;        /* Gris-bleu sombre, encre */
+    --jp-text-light: #8b99a9;       /* Gris-bleu clair */
+    --jp-leaf-green: #9fb8a9;       /* Vert de feuille doux */
+}
+
+/* --- FOND ET GÉNÉRAL --- */
+
+body, .app-container, .workspace-leaf {
+    background-color: var(--jp-background-light) !important;
+    font-family: 'Noto Serif JP', serif !important;
+    color: var(--jp-text-dark) !important;
+}
+
+/* Zone d'écriture (La "feuille" d'aquarelle) */
+.markdown-source-view.mod-cm6, .markdown-rendered {
+    background-color: var(--jp-paper-white) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important; /* Ombre douce */
+    margin: 15px !important;
+    padding: 20px !important;
+    border: 1px solid var(--jp-cherry-blossom) !important; /* Bordure rose très fine */
+}
+
+/* --- DÉCORATION : FLEURS DE CERISIER (KITSCH DÉLICAT) --- */
+
+/* Ajouter des fleurs de cerisier en fond (très subtil) */
+.workspace-leaf-content:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/cherry-blossom.png'); /* Fleur de cerisier */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Très transparent pour la subtilité */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- EXPLORATEUR DE FICHIERS --- */
+
+/* Barre latérale (Fond légèrement plus foncé pour la profondeur) */
+.nav-files-container {
+    background-color: var(--jp-cherry-blossom) !important;
+    border-right: 1px solid var(--jp-accent-pink) !important;
+    border-radius: 0 20px 20px 0 !important;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Dossiers (Rose délicat) */
+.nav-folder-title-content {
+    color: var(--jp-accent-pink) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em;
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.nav-folder-title:hover {
+    background-color: rgba(255, 255, 255, 0.4) !important; /* Effet "papier" au survol */
+    border-radius: 8px;
+}
+
+/* Fichiers (Vert de feuille, apaisant) */
+.nav-file-title-content {
+    color: var(--jp-leaf-green) !important;
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.nav-file-title:hover {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    border-radius: 8px;
+}
+
+/* --- TYPOGRAPHIE --- */
+
+/* Titres (Plus sombres, comme l'encre) */
+h1, h2, h3, .cm-header {
+    color: var(--jp-text-dark) !important;
+    border-bottom: 1px dashed var(--jp-text-light) !important;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Italique (Rouge encre) */
+em, i, .cm-em {
+    color: #cc0033 !important;
+    font-style: italic;
+}
+
+/* Gras (Gris encre foncé) */
+strong, b, .cm-strong {
+    color: #4a4a4a !important;
+    font-weight: 700;
+}
+
+/* Curseur (Rouge encre fin) */
+.cm-cursor {
+    border-left: 2px solid #cc0033 !important;
+}
+
+/* Sélection de texte (Rose très pâle) */
+.cm-selectionBackground, ::selection {
+    background-color: rgba(251, 233, 239, 0.6) !important; /* Très léger rose cerisier */
+    border-radius: 4px;
+}
